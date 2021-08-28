@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/quantidade_jogadores_label" />
+
+    <RadioGroup
+        android:id="@+id/quantidadeJogadoresRg"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/doisJogadoresRb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="@string/dois_jogadores" />
+
+        <RadioButton
+            android:id="@+id/tresJogadoresRb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/tres_jogadores" />
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/escolha_jogada_label" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/pedraIb"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:scaleType="fitCenter"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:src="@mipmap/pedra" />
+
+        <ImageButton
+            android:id="@+id/papelIb"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:scaleType="fitCenter"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:src="@mipmap/papel" />
+
+        <ImageButton
+            android:id="@+id/tesouraIb"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:scaleType="fitCenter"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:src="@mipmap/tesoura" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/resultadoLl"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/jogada_label" />
+
+        <ImageView
+            android:id="@+id/jogadaIv"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@mipmap/pedra" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/jogada_computador1_label" />
+
+        <ImageView
+            android:id="@+id/jogadaComputador1Iv"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@mipmap/pedra" />
+
+        <TextView
+            android:id="@+id/jogadaComputador2Tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/jogada_computador2_label" />
+
+        <ImageView
+            android:id="@+id/jogadaComputador2Iv"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@mipmap/pedra" />
+
+        <TextView
+            android:id="@+id/resultadoTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

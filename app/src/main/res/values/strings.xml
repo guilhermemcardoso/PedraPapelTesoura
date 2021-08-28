@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Pedra Papel Tesoura</string>
+    <string name="quantidade_jogadores_label">Escolha a quantidade de jogadores:</string>
+    <string name="escolha_jogada_label">Escolha sua jogada:</string>
+    <string name="tres_jogadores">3 jogadores</string>
+    <string name="dois_jogadores">2 jogadores</string>
+    <string name="jogada_label">Sua jogada foi:</string>
+    <string name="jogada_computador1_label">Jogada do Computador:</string>
+    <string name="jogada_computador2_label">Jogada do Computador 2:</string>
+</resources>
