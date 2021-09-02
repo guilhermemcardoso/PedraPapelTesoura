@@ -113,6 +113,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private String gerarResultado(String jogador, String computador1, String computador2, int quantidadeJogadores) {
 
+        if(!jogador.equals(computador1) &&
+                !jogador.equals(computador2) &&
+                !computador1.equals(computador2) &&
+                computador2.length() > 0) {
+            return "empatou";
+        }
+
         if(jogador.equals("pedra")) {
             if(computador1.equals("papel") || computador2.equals("papel")) {
                 return "perdeu";
